@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- langkah 1 -->
+    <head>
+        <link rel="stylesheet" type="text/css" href="styleSlide.css"/> <script
+        <script src="jquery371.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#flip").click(function() {  
+                    $("#kotak2").slideUp ("slow");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="flip">Klik untuk Efek Slide</div> <div id="kotak2">Selamat Pagi</div>
+    </body>
+
+    <!-- langkah 6 -->
+    <head>
+        <link rel="stylesheet" type="text/css" href="styleSlide.css"/> 
+        <script src="jquery371.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#flip").click(function() { 
+                    $("#kotak2").slideDown ("slow");           
+                });
+            }); 
+        </script>
+    </head>
+    <body>
+        <div id="flip">Klik untuk Efek Slide</div>
+        <div id="kotak2 style=display:none;">Selamat Pagi</div> 
+    </body>
+
+    <!-- Langkah 10 -->
+    <head>
+    <link rel="stylesheet" type="text/css" href="styleSlide.css"/>
+    <script src="jquery371.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#flip").click(function() {  
+                $("#kotak2").slideToggle ("slow");
+            });
+        });
+    </script>
+
+    </head>
+    <body>
+        <div id="flip">Klik untuk Efek Slide</div> 
+        <div id="kotak2">Selamat Pagi</div>
+    </body>
+</html>
