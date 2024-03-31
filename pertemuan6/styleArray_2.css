@@ -1,0 +1,30 @@
+table {
+    width: 60%; /* Atur lebar tabel */
+    margin: 20px auto; /* Pusatkan tabel dan beri margin atas bawah */
+    border-collapse: collapse; /* Menghilangkan jarak antar border */
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1); /* Beri sedikit bayangan */
+}
+
+/* Mengatur tampilan header tabel */
+th {
+    background-color: #4CAF50; /* Warna background */
+    color: white; /* Warna teks */
+    padding: 10px; /* Padding di dalam sel */
+}
+
+/* Mengatur tampilan sel tabel */
+td {
+    padding: 8px; /* Padding di dalam sel */
+    border-bottom: 1px solid #ddd; /* Border bawah setiap baris */
+    text-align: left; /* Rata kiri teks */
+}
+
+/* Mengatur hover effect pada baris tabel */
+tr:hover {
+    background-color: #f5f5f5; /* Ubah warna background saat hover */
+}
+
+/* Mengatur tampilan baris pertama (header) agar tidak berubah saat di-hover */
+tr:first-child:hover {
+    background-color: #4CAF50; /* Tetapkan warna sama dengan background */
+}

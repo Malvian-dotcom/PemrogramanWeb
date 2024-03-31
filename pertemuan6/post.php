@@ -1,0 +1,23 @@
+<html>
+<body>
+<!-- Membuat form menggunakan variabel superglobal, yang berarti data form akan dikirim ke halaman ini sendiri. -->
+<form method="post" action="<?php echo $_SERVER["PHP_SELF"];?>"> 
+    Name: <input type="text" name="fname">
+    <input type="submit">
+</form>
+
+<?php
+// Mengecek apakah form telah disubmit dengan metode POST dengan metode if else
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['fname'];
+    if (empty($name)){
+        echo "Name is Empty";
+    } else{
+        echo $name;
+    }
+}
+?>
+
+</body>
+</html>
+
